@@ -16,8 +16,9 @@ import java.io.IOException;
  */
 public class Exercici3 {
 	public static void main(String[] args) throws IOException {
-		String pathname1 = "a.txt";
-		String pathname2 = "b.txt";
+		String path = "data/in/";
+		String pathname1 = path+"a.txt";
+		String pathname2 = path+"b.txt";
 
 		BufferedReader buffer1=null;
 		BufferedReader buffer2=null;

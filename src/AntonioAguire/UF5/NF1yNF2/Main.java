@@ -1,8 +1,6 @@
-package AntonioAguire;
+package AntonioAguire.UF5.NF1yNF2;
 
 import Utils.Utils;
-
-import java.util.Scanner;
 
 public class Main {
 
