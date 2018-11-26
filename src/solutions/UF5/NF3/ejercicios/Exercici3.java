@@ -1,5 +1,7 @@
 package solutions.UF5.NF3.ejercicios;
 
+import Utils.Constantes;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.File;
@@ -14,11 +16,11 @@ import java.io.IOException;
  * 
  *
  */
-public class Exercici3 {
+public class Exercici3 implements Constantes {
 	public static void main(String[] args) throws IOException {
-		String path = "data/in/";
-		String pathname1 = path+"a.txt";
-		String pathname2 = path+"b.txt";
+
+		String pathname1 = PATH_IN+"a.txt";
+		String pathname2 = PATH_IN+"b.txt";
 
 		BufferedReader buffer1=null;
 		BufferedReader buffer2=null;
