@@ -36,7 +36,7 @@ public class BackUp implements Constantes {
         backup.mkdir();
         String pathDesti = PATH_IN+subdirectori+nBackup;
         copiarTotsArxius(path,pathDesti	,arxius);
-        System.out.println("fi");
+        System.out.println("backUp realizado con exito!");
 
     }
 
@@ -66,7 +66,7 @@ public class BackUp implements Constantes {
                         copiar (fOrigen, fDesti);
                     }
                     else {
-                        System.out.println("L'arxiu "+fOrigen+" no s'ha pogut copiar ja que no té permisos de lectura");
+                        System.out.println("El archivo "+fOrigen+" le faltan permisos de lectura y no se ha podido copiar");
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -74,7 +74,6 @@ public class BackUp implements Constantes {
             }
         }
     }
-
     private static void copiar(File fileI, File fileO) throws IOException {
         boolean append=true;
         byte buff[] = new byte[100];
