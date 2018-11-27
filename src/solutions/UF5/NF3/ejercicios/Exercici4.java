@@ -1,5 +1,7 @@
 package solutions.UF5.NF3.ejercicios;
 
+import Utils.Constantes;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -20,15 +22,15 @@ import java.io.IOException;
  * 
  *
  */
-public class Exercici4 {
+public class Exercici4 implements Constantes {
 	public static void main(String[] args) {
 		String subdirectori="backUp";
-		String path = "/home/lau/test";
+		String path = "data/in";
 		
 		File [] arxius = new File(path).listFiles();
 		int nBackup = detectarNumBackup(arxius);
 		nBackup = nBackup+1;
-		File backup = new File ("/home/lau/test/"+subdirectori+nBackup);
+		File backup = new File (PATH_IN+subdirectori+nBackup);
 		backup.mkdir();
 		String pathDesti = path+"/"+subdirectori+nBackup;
 		copiarTotsArxius(path,pathDesti	,arxius);
