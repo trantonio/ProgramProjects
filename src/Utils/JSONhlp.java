@@ -16,7 +16,7 @@ public class JSONhlp implements Constantes{
     public static JSONParser parser = new JSONParser();
 
     public static void configParser(String n1,String n2) throws IOException, ParseException {
-        Object obj = parser.parse(new InputStreamReader(new FileInputStream("Data/resource" + FS + n1 + FS  + n2)));
+        Object obj = parser.parse(new InputStreamReader(new FileInputStream("data" +FS+"JSON" + FS + n1 + FS  + n2+".json")));
         jsonObject = (JSONObject) obj;
     }
 }

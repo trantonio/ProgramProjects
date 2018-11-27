@@ -1,0 +1,10 @@
+{
+  "Menu":"Prueba menu",
+  "Intro":"Selecciona un numero para ejecutar : ",
+  "Option0":"Elimina toda la carpeta in",
+  "Option1":"Compraración de archivos",
+  "Option2":"Crear un backUp",
+  "Option3":"Contar palabras de un fichero",
+  "NoOption":"No ha seleccionado ninguna opcion"
+
+}
