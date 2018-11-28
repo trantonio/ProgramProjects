@@ -11,8 +11,9 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-
+    static File[] archivos =new File("data/in").listFiles();
     public static void main(String[] args) throws IOException, ParseException {
+
         //Configuramos la clase parse para que funcionen los json
         JSONhlp.configParser("NF3","Main");
         int numOptions= 3;
@@ -28,8 +29,7 @@ public class Main {
     public static void Menu (int option) throws IOException {
         switch (option){
             case 0:
-                File[] arxius = new File("data/in").listFiles();
-                for (File f : arxius) {
+                for (File f : archivos) {
                     DeleteFolders.deleteFolder(f);
                 }
                 break;
@@ -40,7 +40,11 @@ public class Main {
                 new BackUp();
                 break;
             case 3:
-                new CountFile();
+//                new CountFile();
+                for(File f : archivos){
+                    if(!f.isDirectory()) System.out.println(CountFile.CountFile(f));
+                    }
+                break;
                 default:
                     System.out.println(JSONhlp.jsonObject.get("NoOption"));
                     break;
