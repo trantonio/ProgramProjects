@@ -1,0 +1,21 @@
+id=1
+nom=CHAT ROOM
+actiu=false
+dataCreacio=01-01-1970
+dataAnulacio=09-08-1988
+id=2
+nom=EMAIL
+actiu=true
+dataCreacio=10-08-1988
+dataAnulacio=
+id=3
+nom=CHAT
+actiu=true
+dataCreacio=10-08-1988
+dataAnulacio=
+id=4
+nom=FTP
+actiu=true
+dataCreacio=10-08-1988
+dataAnulacio=
+
